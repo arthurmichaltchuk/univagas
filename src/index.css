@@ -1,13 +1,86 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  margin:0px;
+  padding: 0px;
+  
+  background-color: #eeeded !important;
+  font-family: 'Montserrat', sans-serif !important;
+}
+*{
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none !important;
+}
+button{
+  outline: none;
+  border: none;
+}
+input{
+  outline: none;
+  border: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  left: 0;
+  top: 0;
+  width:100%;
+  z-index: 1;
+  background-color: transparent;
+  transition: 0.6s ease-in-out;
+  height: 80px;
+}
+nav ul{
+  display: flex;
+}
+
+nav li{
+  padding-top: 11px ;
+}
+
+.btnNavbar, .btnNavBarIcon{
+  font-family: calibri !important;
+  height:40px;
+  line-height: 43px;
+  margin: 3px;
+  padding: 0px 22px !important;
+  display: flex;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color:#ffffff !important;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  transition: 0.2s ease-in-out;
+}
+
+.btnNavbar:hover{
+  background-color: #ffffff;
+  color:#254F97 !important;
+  transition: all ease 0.2s;
+}
+
+.navbar{
+  background-color: #254F97;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.2);
+  height: 90px !important;
+}
+
+.logo img{
+  height: 80px;
+}
+
+.logoLogin{
+  height: 100px;
+}
+
+nav .menu-btn,
+.menu-icon{
+  display:none;
 }
