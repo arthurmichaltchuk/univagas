@@ -112,22 +112,33 @@ export default function Index() {
         },
     ];
 
-    const options = [
-        { value: 'chocolate', label: 'Chocolate' },
-        { value: 'strawberry', label: 'Strawberry' },
-        { value: 'vanilla', label: 'Vanilla' }
-    ]
+    const opcoesCursos = [
+        { value: 'ciencia-da-computacao', label: 'Ciência da Computação' },
+        { value: 'engenharia-mecanica', label: 'Engenharia Mecânica' },
+        { value: 'biologia', label: 'Biologia' },
+        { value: 'administracao-de-empresas', label: 'Administração de Empresas' },
+        { value: 'psicologia', label: 'Psicologia' },
+        { value: 'engenharia-eletrica', label: 'Engenharia Elétrica' },
+        { value: 'medicina', label: 'Medicina' },
+        { value: 'ciencias-ambientais', label: 'Ciências Ambientais' },
+        { value: 'linguistica', label: 'Linguística' },
+        { value: 'arquitetura', label: 'Arquitetura' },
+        { value: 'financas', label: 'Finanças' },
+        { value: 'fisica', label: 'Física' },
+        { value: 'ciencia-politica', label: 'Ciência Política' },
+        { value: 'quimica', label: 'Química' },
+        { value: 'sociologia', label: 'Sociologia' },
+      ];
 
     return (
         <div>
-            <div className='search-box-pg-init'>
+            <div className='search-box'>
                 <div className="container">
                     <div className='row pt-4'>
                         <div className='col-md-6'><h1>Vagas</h1></div>
-                        <div className='col-md-6'>
-                            <input placeholder='Titulo ou empresa' className='search-input' />
+                        <div className='col-md-6 d-flex'>
+                            <Select options={opcoesCursos} className='optionCurso'/>
                             <Button variant="primary" className="search-button">Pesquisar</Button>
-                            <Select options={options} />
                         </div>
                     </div>
                 </div>
