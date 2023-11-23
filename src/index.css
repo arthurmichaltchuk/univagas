@@ -84,3 +84,104 @@ nav .menu-btn,
 .menu-icon{
   display:none;
 }
+
+#text-mentoria {
+  text-align: center;
+  font-size: 45px;
+}
+
+.header-mentoria {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#subtitle-mentoria {
+  display: flex;
+  width: 145px;
+  height: 45px;
+  background-color: #FF6666;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.conteudo-mentoria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planos {
+  text-align: center;
+  border: 3px solid #CDCDCD;
+  height: 290px;
+  width: 466px;
+  margin-right: 40px;
+  border-radius: 12px;
+}
+
+.planos h2 {
+  color: black;
+  font-size: 38px;
+}
+
+.planos label {
+  color: gray;
+  font-size: 20px;
+}
+
+.planos p {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.compre-agora {
+  color: black;
+  background-color: #6070FF;
+  width: 290px;
+  height: 80px;
+  border-radius: 12px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  transition: .2s;
+}
+
+.compre-agora:hover {
+  color: black;
+}
+
+#compre-agora2 {
+  background-color: #FF6666;
+}
+
+.container-plano {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+}
+
+.container-plano button {
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.descricao {
+  margin-bottom: 28px;
+  margin-left: -10px;
+  width: 420px;
+  text-align: justify;
+}
+
+#descOne {
+  margin-top: 70px;
+}
