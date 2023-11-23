@@ -1,126 +1,86 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import logo from '../images/curriculo.jpg'
+import Button from 'react-bootstrap/Button';
 
 const App = () => {
   const downloadCV = () => {
-    // Lógica para gerar e baixar o currículo em PDF
+    
     alert('Download do currículo');
   };
 
   return (
-    <div style={styles.app}>
-      <div style={styles.header}>
-        <div style={styles.leftContent}>
-          <h1 style={styles.title}>Criação de Currículo</h1>
-          <ul style={styles.list}>
-            <li>Destaque suas conquistas e responsabilidades anteriores.</li>
-            <li>Mantenha o currículo atualizado com suas habilidades mais recentes.</li>
-            <li>Use uma linguagem clara e objetiva.</li>
-            <li>Adapte o currículo para a vaga específica que está se candidatando.</li>
-          </ul>
-          <p style={styles.subTitle}>Segue um modelo ao lado:</p>
-        </div>
-        <div style={styles.rightContent}>
-          <div style={styles.resume}>
-            <h2 style={styles.resumeTitle}>Informações Pessoais</h2>
-            <p style={styles.resumeText}>Nome: Seu Nome</p>
-            <p style={styles.resumeText}>Email: seu@email.com</p>
-            <h2 style={styles.resumeTitle}>Experiência Profissional</h2>
-            <p style={styles.resumeText}>Cargo: Desenvolvedor Web</p>
-            <p style={styles.resumeText}>Empresa: Empresa ABC</p>
-            <p style={styles.resumeText}>Período: Janeiro 2020 - Presente</p>
-            <h2 style={styles.resumeTitle}>Educação</h2>
-            <p style={styles.resumeText}>Curso: Ciência da Computação</p>
-            <p style={styles.resumeText}>Instituição: Universidade XYZ</p>
-            <p style={styles.resumeText}>Ano de Conclusão: 2019</p>
+    <div className="container">
+      <div className="row">
+        <div className="col-md-8 pt-5">
+          <h1 className='introdicas'>Introdução</h1>
+          <div className='introducao'>
+          <h4 className='textintr'>Um currículo bem elaborado e saber se comportar em uma entrevista é uma ferramenta essencial para impulsionar sua carreira, destacar suas qualificações e garantir que você seja considerado em processos seletivos.
+          </h4>
           </div>
-          <button style={styles.button} onClick={downloadCV}>
-            Baixar Currículo
-          </button>
+          <p></p>
         </div>
-        <div style={styles.leftContent}>
-          <h1 style={styles.title}>Dicas para Entrevistas</h1>
-          <ul style={styles.list}>
-            <li>Esteja preparado para falar sobre suas experiências passadas.</li>
-            <li>Pratique respostas para perguntas comuns de entrevista.</li>
-            <li>Mostre entusiasmo e interesse pela posição.</li>
-            <li>Prepare algumas perguntas para fazer ao entrevistador.</li>
-          </ul>
+        <div className="col-md-4">
+          <div className='dicasimg'>
+          <img src={logo} alt="Logo" />
+          </div>
         </div>
+
+        <hr />
+
+        <div className='downloadcv'>
+          <h4>Exemplo de currículo</h4>
+        </div>
+        
       </div>
+      <div className="d-flex justify-content-center mt-4">
+      <Button variant="primary" className="btn-dicas" onClick={downloadCV}>
+            Baixar Currículo
+          </Button>
+          </div>
+
+          <br /><br />
+
+          <div className='dicascv'>
+          <h4>Dicas para currículo</h4>
+          <br />
+          <h5>Dica 1</h5>
+          <p>Destacar Conquistas: Descreva realizações de forma clara.</p>
+          <h5>Dica 2</h5>
+          <p>Atualizar Regularmente: Mantenha o currículo sempre atualizado.</p>
+          <h5>Dica 3</h5>
+          <p>Linguagem Clara: Use frases curtas e diretas.</p>
+          <h5>Dica 4</h5>
+          <p>Experiência Profissional: Destaque cargos anteriores.</p>
+        </div>
+        <br />
+        <br />
+
+        <div className='dicasent'>
+          <h4>Dicas para entrevista</h4>
+          <br />
+          <h5>Dica 1</h5>
+          <p>Conheça a empresa e o papel para o qual está se candidatando.</p>
+          <h5>Dica 2</h5>
+          <p>Entenda a cultura organizacional e os valores da empresa.</p>
+          <h5>Dica 3</h5>
+          <p>Antecipe perguntas comuns e prepare respostas claras e concisas.</p>
+          <h5>Dica 4</h5>
+          <p>Destaque experiências passadas e conquistas relevantes.</p>
+        </div>
+        <br />
+
+        <div>
+      <Button variant="primary" className="btn-topo" onClick={downloadCV}>
+            Voltar ao topo
+          </Button>
+          </div>
+
+          
     </div>
   );
 };
 
-const styles = {
-  app: {
-    textAlign: 'center',
-    backgroundColor: '#f8f9fa',
-    fontFamily: 'Arial, sans-serif',
-  },
-  header: {
-    padding: '40px 20px',
-    color: '#000', // Cor do texto preto
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'flex-start',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-  },
-  leftContent: {
-    maxWidth: '300px',
-    textAlign: 'left',
-    marginRight: '20px',
-  },
-  rightContent: {
-    maxWidth: '600px',
-  },
-  title: {
-    fontSize: '24px',
-    marginBottom: '10px',
-    color: '#000000',
-  },
-  subTitle: {
-    fontSize: '16px',
-    marginTop: '10px',
-    color: '#6c757d',
-  },
-  list: {
-    listStyleType: 'none',
-    padding: '0',
-    margin: '0',
-    fontSize: '14px',
-    color: '#000', // Cor do texto preto
-  },
-  resume: {
-    textAlign: 'left',
-    padding: '20px',
-    border: '1px solid #dee2e6',
-    borderRadius: '8px',
-    boxSizing: 'border-box',
-    fontSize: '14px',
-    backgroundColor: '#fff',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-  },
-  resumeTitle: {
-    fontSize: '18px',
-    marginBottom: '5px',
-    color: '#000000',
-  },
-  resumeText: {
-    margin: '5px 0',
-    color: '#000', // Cor do texto preto
-  },
-  button: {
-    backgroundColor: '#1d7bc3',
-    color: 'white',
-    fontSize: '14px',
-    padding: '10px 16px',
-    marginTop: '20px',
-    cursor: 'pointer',
-    border: 'none',
-    borderRadius: '4px',
-    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
-  },
-};
+
 
 export default App;

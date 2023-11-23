@@ -154,3 +154,56 @@ nav .menu-btn,
   padding: 5px;
 }
 
+
+.statusBoxSucesso{
+  background-color: rgb(92, 255, 47);
+  border-radius: 10px;
+  max-width: 90px;
+}
+
+.statusBoxAndamento{
+  background-color: rgb(47, 92, 255);
+  border-radius: 10px;
+  max-width: 150px;
+}
+
+.statusBoxAguardando{
+  background-color: rgb(255, 245, 47);
+  border-radius: 10px;
+  max-width: 140px;
+}
+
+.statusBoxText{
+  padding: 5px;
+}
+
+
+.dicasimg img{
+  height: 500px;
+  margin-top: 50px;
+  padding-bottom: 10px;
+}
+
+.introdicas {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.btn-dicas{
+  margin-left: auto;
+  margin-right: auto
+}
+
+.downloadcv{
+  text-align: center;
+}
+
+.introducao{
+  text-align: left; 
+  max-width: 500px;
+  padding-top: 40px;
+}
+
+.textintr{
+  font-size: 20px;
+}
