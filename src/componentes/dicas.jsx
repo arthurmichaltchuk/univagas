@@ -31,6 +31,7 @@ const App = () => {
           <img src={logo} alt="Logo" />
           </div>
         </div>
+        
 
         <hr />
 
@@ -51,7 +52,7 @@ const App = () => {
           <h4>Dicas para currículo</h4>
           <br />
           <h5>Dica 1</h5>
-          <p></p>
+          <p>Destacar Conquistas: Descreva realizações de forma clara.</p>
           <h5>Dica 2</h5>
           <p>Atualizar Regularmente: Mantenha o currículo sempre atualizado.</p>
           <h5>Dica 3</h5>
