@@ -255,6 +255,7 @@ nav .menu-btn,
 .planos {
   text-align: center;
   border: 3px solid #CDCDCD;
+  min-height: 810px;
   width: 350px;
   border-radius: 12px;
   margin-right: 40px;
@@ -276,6 +277,7 @@ nav .menu-btn,
 .planos p {
   font-size: 20px;
   margin-top: 25px;
+  margin-bottom: -20px;
 }
 
 .compre-agora {
@@ -287,6 +289,7 @@ nav .menu-btn,
   color: white;
   font-size: 24px;
   font-weight: bold;
+  margin-bottom: 20px;
   transition: .2s;
 }
 
@@ -306,13 +309,12 @@ nav .menu-btn,
 }
 
 .container-plano button {
-  margin-top: 40px;
+  margin-top: 10px;
   cursor: pointer;
 }
 
 .descricao {
   margin-bottom: 28px;
-  margin-left: -10px;
   width: 320px;
   text-align: justify;
 }
