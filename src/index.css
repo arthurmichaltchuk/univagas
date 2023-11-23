@@ -115,3 +115,33 @@ nav .menu-btn,
   margin-left: auto;
   margin-right: auto;
 }
+
+.dicasimg img{
+  height: 500px;
+  margin-top: 50px;
+  padding-bottom: 10px;
+}
+
+.introdicas {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.btn-dicas{
+  margin-left: auto;
+  margin-right: auto
+}
+
+.downloadcv{
+  text-align: center;
+}
+
+.introducao{
+  text-align: left; 
+  max-width: 500px;
+  padding-top: 40px;
+}
+
+.textintr{
+  font-size: 20px;
+}
