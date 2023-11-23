@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Select from 'react-select'
 
 export default function Index() {
     const data = [
@@ -111,6 +112,11 @@ export default function Index() {
         },
     ];
 
+    const options = [
+        { value: 'chocolate', label: 'Chocolate' },
+        { value: 'strawberry', label: 'Strawberry' },
+        { value: 'vanilla', label: 'Vanilla' }
+    ]
 
     return (
         <div>
@@ -121,6 +127,7 @@ export default function Index() {
                         <div className='col-md-6'>
                             <input placeholder='Titulo ou empresa' className='search-input' />
                             <Button variant="primary" className="search-button">Pesquisar</Button>
+                            <Select options={options} />
                         </div>
                     </div>
                 </div>
