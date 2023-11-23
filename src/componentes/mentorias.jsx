@@ -1,7 +1,11 @@
+import { IoMdClose } from "react-icons/io";
+import { FaCheck } from "react-icons/fa";
+
+
 export default function Mentorias() {
   return (
-    <div>
-      <h1 id="text-mentoria">Escolha seu plano de preços</h1>
+    <div className="container">
+      <h1 id="text-mentoria">Escolha seu plano de preços<IoMdClose /><FaCheck /></h1>
       <div className="header-mentoria">
         <div id="subtitle-mentoria">
           <p>Melhor preço</p>
