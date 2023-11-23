@@ -250,10 +250,9 @@ nav .menu-btn,
 .planos {
   text-align: center;
   border: 3px solid #CDCDCD;
-  height: 290px;
-  width: 466px;
-  margin-right: 40px;
+  width: 350px;
   border-radius: 12px;
+  margin-right: 40px;
 }
 
 .planos h2 {
@@ -277,8 +276,8 @@ nav .menu-btn,
 .compre-agora {
   color: black;
   background-color: #6070FF;
-  width: 290px;
-  height: 80px;
+  width: 210px;
+  min-height: 50px;
   border-radius: 12px;
   color: white;
   font-size: 24px;
@@ -309,7 +308,7 @@ nav .menu-btn,
 .descricao {
   margin-bottom: 28px;
   margin-left: -10px;
-  width: 420px;
+  width: 320px;
   text-align: justify;
 }
 
@@ -320,4 +319,5 @@ nav .menu-btn,
 .optionCurso{
   margin-right: 10px;
   width: 100%;
+  margin-top: 60px;
 }
