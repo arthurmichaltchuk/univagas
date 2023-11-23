@@ -45,13 +45,12 @@ nav li{
 }
 
 .btnNavbar {
-  font-family: calibri !important;
   height:40px;
   line-height: 43px;
   margin: 3px;
   padding: 0px 22px !important;
   display: flex;
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
   color:#000000 !important;
@@ -110,8 +109,48 @@ nav .menu-btn,
   background-color: #1d7bc3;
 }
 
+.search-button {
+  background-color: #1d7bc3;
+}
+
+.search-input{
+  padding: 8px;
+  border: 1px solid rgb(151, 151, 151);
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.search-box{
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.2);
+  height: 92px;
+}
+
 .cardCanditaturas{
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
+
+.statusBoxSucesso{
+  background-color: rgb(92, 255, 47);
+  border-radius: 10px;
+  max-width: 90px;
+}
+
+.statusBoxAndamento{
+  background-color: rgb(47, 92, 255);
+  border-radius: 10px;
+  max-width: 150px;
+}
+
+.statusBoxAguardando{
+  background-color: rgb(255, 245, 47);
+  border-radius: 10px;
+  max-width: 140px;
+}
+
+.statusBoxText{
+  padding: 5px;
+}
+
