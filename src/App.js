@@ -18,7 +18,6 @@ function App() {
           <Route path='/dicas' element={<Dicas />} />
           <Route path='/mentorias' element={<Mentorias />} />
         </Routes>
-        {/* <Footer/> */}
       </BrowserRouter>
     </div>
   );
