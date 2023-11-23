@@ -5,8 +5,14 @@ import Button from 'react-bootstrap/Button';
 
 const App = () => {
   const downloadCV = () => {
-    
-    alert('Download do currículo');
+    const fileContent = '../images/curriculo.txt';
+
+    const blob = new Blob([fileContent], { type: 'text/plain' });
+
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'curriculo.txt';
+    link.click();
   };
 
   return (
@@ -45,7 +51,7 @@ const App = () => {
           <h4>Dicas para currículo</h4>
           <br />
           <h5>Dica 1</h5>
-          <p>Destacar Conquistas: Descreva realizações de forma clara.</p>
+          <p></p>
           <h5>Dica 2</h5>
           <p>Atualizar Regularmente: Mantenha o currículo sempre atualizado.</p>
           <h5>Dica 3</h5>
@@ -69,14 +75,7 @@ const App = () => {
           <p>Destaque experiências passadas e conquistas relevantes.</p>
         </div>
         <br />
-
-        <div>
-      <Button variant="primary" className="btn-topo" onClick={downloadCV}>
-            Voltar ao topo
-          </Button>
-          </div>
-
-          
+    
     </div>
   );
 };
@@ -84,3 +83,4 @@ const App = () => {
 
 
 export default App;
+
