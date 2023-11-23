@@ -3,8 +3,6 @@ import { Nav, Container } from 'react-bootstrap';
 import React from 'react';
 import logo from '../images/logo.png';
 
-import { AiFillHome } from "react-icons/ai";
-
 import { useNavigate } from 'react-router-dom';
 
 function Header() {

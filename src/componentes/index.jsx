@@ -65,24 +65,24 @@ export default function Index() {
 
     return (
         <div className="container">
-            <br/>
+            <br />
             <h1>Pagina inicial</h1>
-            <hr/>
-            <div class="row row-cols-2">
+            <hr />
+            <div className="row row-cols-2">
 
 
                 {data.map((item, index) => (
-                    <div class="col-6">
+                    <div className="col-6" key={index}>
                         <br />
                         <div className="card" key={index}>
                             <Card>
                                 <Card.Body>
                                     <Card.Title className="card-title">{item.titulo}</Card.Title>
                                     <Card.Subtitle className="mb-2 text-muted card-subtitle">{item.empresa}</Card.Subtitle>
-                                    <Card.Text className="card-text">{item.descricao}</Card.Text>
                                     <Card.Text className="card-text">{item.cep}</Card.Text>
-                                    <Card.Text className="card-text">{item.tempo}</Card.Text>
+                                    <Card.Text className="card-text">{item.descricao}</Card.Text>
                                     <Button variant="primary" className="card-button">Saiba mais</Button>
+                                    <Card.Text className="card-text">{item.tempo}</Card.Text>
                                 </Card.Body>
                             </Card>
                         </div>
@@ -90,6 +90,7 @@ export default function Index() {
                     </div>
                 ))}
             </div>
+            <br/>
         </div>
     );
 }
