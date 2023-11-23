@@ -30,7 +30,7 @@ function Header() {
             <span className="nav-icon"></span>
           </label>
           <ul className="menu">
-            <li><Nav.Link as={Link} to="/" className='btnNavBarIcon'><AiFillHome className='iconsNav' /></Nav.Link></li>
+            <li><Nav.Link as={Link} to="/" className='btnNavbar'>Página inicial</Nav.Link></li>
             <li><Nav.Link as={Link} to="/candidaturas" className='btnNavbar'>Candidaturas</Nav.Link></li>
             <li><Nav.Link as={Link} to="/dicas" className='btnNavbar'>Dicas</Nav.Link></li>
             <li><Nav.Link as={Link} to="/mentorias" className='btnNavbar'>Mentorias</Nav.Link></li>

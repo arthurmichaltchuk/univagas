@@ -44,7 +44,7 @@ nav li{
   padding-top: 11px ;
 }
 
-.btnNavbar, .btnNavBarIcon{
+.btnNavbar {
   font-family: calibri !important;
   height:40px;
   line-height: 43px;
@@ -54,26 +54,26 @@ nav li{
   font-size: 0.9rem;
   text-transform: uppercase;
   font-weight: 500;
-  color:#ffffff !important;
+  color:#000000 !important;
   letter-spacing: 1px;
   border-radius: 3px;
   transition: 0.2s ease-in-out;
 }
 
 .btnNavbar:hover{
-  background-color: #ffffff;
-  color:#254F97 !important;
+  background-color: #1d7bc3;
+  color:#000000 !important;
   transition: all ease 0.2s;
 }
 
 .navbar{
-  background-color: #254F97;
+  background-color: #ffffff;
   box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.2);
   height: 90px !important;
 }
 
 .logo img{
-  height: 80px;
+  height: 50px;
 }
 
 .logoLogin{
@@ -84,6 +84,31 @@ nav .menu-btn,
 .menu-icon{
   display:none;
 }
+
+/* Add this to your existing CSS or create a new CSS file */
+
+.card {
+  min-width: 18rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-subtitle {
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  color: #495057;
+}
+
+.card-button {
+  margin-top: 1rem;
+}
+
 
 #text-mentoria {
   text-align: center;
