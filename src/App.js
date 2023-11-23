@@ -6,6 +6,7 @@ import Candidaturas from './componentes/candidaturas';
 import Mentorias from './componentes/mentorias';
 import Header from './componentes/Header';
 
+
 function App() {
   return (
     <div className="App">
@@ -17,7 +18,6 @@ function App() {
           <Route path='/dicas' element={<Dicas />} />
           <Route path='/mentorias' element={<Mentorias />} />
         </Routes>
-        {/* <Footer/> */}
       </BrowserRouter>
     </div>
   );
