@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 
 const App = () => {
   const downloadCV = () => {
-    const fileContent = '../images/curriculo.txt';
+    const fileContent = 'curriculo.txt';
 
     const blob = new Blob([fileContent], { type: 'text/plain' });
 
