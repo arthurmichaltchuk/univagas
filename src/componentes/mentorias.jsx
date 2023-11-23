@@ -1,6 +1,6 @@
 export default function Mentorias() {
   return (
-    <div>
+    <div className="container">
       <h1 id="text-mentoria">Escolha seu plano de preços</h1>
       <div className="header-mentoria">
         <div id="subtitle-mentoria">
